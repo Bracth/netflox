@@ -12,7 +12,7 @@ interface Props {
 }
 
 function Banner({netflixOriginals}: Props) {
-    const [movie, setMovie] = useState<Movie | null>()
+    const [movie, setMovie] = useState<Movie | null>(null)
     const [currentMovie, setCurrentMovie] = useRecoilState(movieState)
     const [showModal, setShowModal] = useRecoilState(modalState)
 
