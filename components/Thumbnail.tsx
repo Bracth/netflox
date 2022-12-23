@@ -20,7 +20,7 @@ function Thumbnail({movie}: Props) {
       setShowModal(true)
       }}
     >
-        <Image src={`https://image.tmdb.org/t/p/w500${
+        <Image alt="Thubmnail of a movie" src={`https://image.tmdb.org/t/p/w500${
           movie.backdrop_path || movie.poster_path
         }`}
         className="rounded-sm object-cover md:rounded"

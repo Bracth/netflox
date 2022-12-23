@@ -10,7 +10,7 @@ interface Inputs {
   password: string
 }
 
-function login() {
+function Login() {
   const [login, setLogin] = useState(false)
   const {signUp, signIn} = useAuth()
 
@@ -31,6 +31,7 @@ function login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Image
+        alt="Background image"
         src="https://rb.gy/p2hphi"
         layout="fill"
         className="-z-10 !hidden opacity-60 sm:!inline"
@@ -98,4 +99,4 @@ function login() {
   )
 }
 
-export default login
+export default Login
